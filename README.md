@@ -1,4 +1,4 @@
-##🧮 Calculadora em Java
+#🧮 Calculadora em Java
 
 Projeto simples de calculadora interativa desenvolvido em Java.
 
