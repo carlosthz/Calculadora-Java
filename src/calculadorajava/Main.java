@@ -2,8 +2,9 @@ package calculadorajava;
 
 import java.util.Scanner;
 
-public class Main {
 
+public class Main {
+	
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int opt;
@@ -29,24 +30,24 @@ public class Main {
 
                 switch (opt) {
                     case 1:
-                        System.out.println(b + " + " + c + " = " + (b + c));
+                        System.out.println(b + " + " + c + " = " + Calculadora.soma(b, c));
                         break;
                     case 2:
-                        System.out.println(b + " - " + c + " = " + (b - c));
+                        System.out.println(b + " - " + c + " = " + Calculadora.sub(b, c));
                         break;
                     case 3:
-                        System.out.println(b + " * " + c + " = " + (b * c));
+                        System.out.println(b + " * " + c + " = " + Calculadora.mult(b, c));
                         break;
                     case 4:
-                        if (c == 0) {
-                            System.out.println("Erro: não é possível dividir por zero.");
-                        } else {
-                            System.out.println(b + " / " + c + " = " + (b / c));
+                        try {
+                           System.out.println(b + " / " + c + " = " + Calculadora.div(b, c));
+                        } catch (ArithmeticException e) {
+                        	System.out.println(e.getMessage());
                         }
                         break;
                 }
 
-                System.out.println(); // linha em branco
+                System.out.println("-------------------");
 
             } else if (opt != 0) {
                 System.out.println("Opção inválida, tente novamente.\n");
