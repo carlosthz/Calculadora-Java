@@ -1,25 +1,25 @@
-#🧮 Calculadora em Java
+# 🧮 Calculadora Interativa em Java
 
-Projeto simples de calculadora interativa desenvolvido em Java.
+Projeto desenvolvido para praticar lógica de programação utilizando Java.
 
 ## 🚀 Funcionalidades
-- Soma
-- Subtração
-- Multiplicação
-- Divisão (com tratamento de erro)
+- Menu interativo no console
+- Soma, subtração, multiplicação e divisão
+- Tratamento de divisão por zero
+- Execução contínua até o usuário sair
 
 ## 💻 Tecnologias
 - Java (JDK 21)
 - Eclipse IDE
 
-## 🎯 Objetivo
-Praticar lógica de programação e estrutura de controle.
+## 🎯 Aprendizados
+- Estruturas de controle (if, switch, loops)
+- Entrada de dados com Scanner
+- Organização de fluxo de programa
 
 ## ▶️ Como executar
-1. Compile o código
-2. Execute a classe Main
-3. Interaja pelo console
+Execute a classe Main no Eclipse ou via terminal.
 
 ---
 
-Feito por Carlos Souza 🔥
+Feito por Carlos Souza 
