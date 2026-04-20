@@ -16,15 +16,13 @@ public class Main {
             System.out.println("3 = Multiplicação");
             System.out.println("4 = Divisão");
             System.out.println("0 = Sair");
-            System.out.print("Escolha: ");
-
-            opt = input.nextInt();
+            
+            opt = Entrada.lerInt(input, "\nEscolha uma opção:\n");
 
             if (opt > 0 && opt <= 4) {
 
-                System.out.println("Digite dois números:");
-                double b = input.nextDouble();
-                double c = input.nextDouble();
+                double b = Entrada.lerDouble(input, "Insira o primeiro valor: ");
+                double c = Entrada.lerDouble(input, "Insira o segundo valor: ");
 
                 System.out.println("\nResultado:");	
 
