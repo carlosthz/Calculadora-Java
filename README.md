@@ -1,6 +1,6 @@
 # 🧮 Calculadora Interativa em Java
 
-Projeto de calculadora desenvolvido em Java com interface via terminal. Permite realizar operações matemáticas básicas de forma interativa.
+Projeto de calculadora desenvolvido em Java com interface via terminal. Permite realizar operações matemáticas básicas de forma interativa, com validação de entradas.
 
 ---
 
@@ -11,6 +11,7 @@ Projeto de calculadora desenvolvido em Java com interface via terminal. Permite 
 - ✖️ Multiplicação
 - ➗ Divisão (com tratamento de erro para divisão por zero)
 - 🔄 Menu interativo com loop até o usuário sair
+- ✅ Validação de entradas — aceita números decimais e rejeita letras/caracteres inválidos
 
 ---
 
@@ -19,7 +20,8 @@ Projeto de calculadora desenvolvido em Java com interface via terminal. Permite 
 ```
 calculadorajava/
 ├── Main.java          # Classe principal com menu interativo
-└── Calculadora.java   # Classe com os métodos de cálculo
+├── Calculadora.java   # Classe com os métodos de cálculo
+└── Entrada.java       # Classe responsável pela validação de entradas
 ```
 
 ---
@@ -43,7 +45,7 @@ cd Calculadora-Java
 
 3. Compile os arquivos:
 ```bash
-javac Main.java Calculadora.java
+javac Main.java Calculadora.java Entrada.java
 ```
 
 4. Execute:
@@ -62,14 +64,14 @@ java calculadorajava.Main
 3 = Multiplicação
 4 = Divisão
 0 = Sair
-Escolha: 1
 
-Digite dois números:
-10
-5
+Escolha uma opção:
+1
+Insira o primeiro valor: 10.5
+Insira o segundo valor: 4
 
 Resultado:
-10.0 + 5.0 = 15.0
+10.5 + 4.0 = 14.5
 -------------------
 ```
 
@@ -80,9 +82,10 @@ Resultado:
 - Java
 - Orientação a Objetos
 - Tratamento de exceções (`ArithmeticException`)
+- Validação de entradas (`hasNextInt`, `hasNextDouble`)
 
 ---
 
 ## 👤 Autor
 
-Feito por **[Carlos Souza](https://github.com/carlosthz)** — sinta-se à vontade para contribuir ou dar uma ⭐ no repositório!
+Feito por **[carlosthz](https://github.com/carlosthz)** — sinta-se à vontade para contribuir ou dar uma ⭐ no repositório!
