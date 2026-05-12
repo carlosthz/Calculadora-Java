@@ -32,6 +32,18 @@ Durante o desenvolvimento deste projeto, pratiquei conceitos importantes como:
 * Entrada e validação de dados
 * Programação Orientada a Objetos
 
+## Como executar
+
+1. Clone este repositório:
+
+```bash
+git clone https://github.com/carlosthz/Calculadora-Java.git
+```
+
+2. Abra o projeto no Eclipse IDE
+
+3. Execute a classe `Main.java`
+
 ## Autor
 
 Carlos Thiago Santos de Souza
